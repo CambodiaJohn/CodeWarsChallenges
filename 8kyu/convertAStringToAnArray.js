@@ -6,7 +6,10 @@
 
 // * "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
 
-function stringToArray(string){
+// function stringToArray(string){
 
-    return string.split(" ")
-    }
+//     return string.split(" ")
+//     }
+
+
+const stringToArray = string => string.split(' ');
