@@ -8,12 +8,15 @@
 // Notes
 // You may consider that there will not be any empty arrays/vectors.
 
-var min = function(list){
+// var min = function(list){
     
-    return Math.min(...list);
-}
+//     return Math.min(...list);
+// }
 
-var max = function(list){
+// var max = function(list){
     
-    return Math.max(...list);
-}
+//     return Math.max(...list);
+// }
+
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
