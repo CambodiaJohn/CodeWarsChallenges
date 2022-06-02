@@ -9,12 +9,17 @@
 // 12321    ==> true
 // 123456   ==> false
 
-function isPalindrome(line) {
-    let reversed = line.split("").reverse().join("")
+// function isPalindrome(line) {
+//     let reversed = line.split("").reverse().join("")
     
-    if(line === reversed){
-      return true
-    } else{
-      return false
-    }
-   }
+//     if(line === reversed){
+//       return true
+//     } else{
+//       return false
+//     }
+//    }
+
+function isPalindrome(line) {
+    return (String(line) == String(line).split('').reverse().join('') )
+    
+  }
