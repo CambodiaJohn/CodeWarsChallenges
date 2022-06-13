@@ -2,9 +2,11 @@
 
 // Can you help her?
 
-function greet(name){
-    if(name === "Johnny")
-      return "Hello, my love!";
-    else
-      return "Hello, " + name + "!";
-  }
+// function greet(name){
+//     if(name === "Johnny")
+//       return "Hello, my love!";
+//     else
+//       return "Hello, " + name + "!";
+//   }
+
+let greet = name => `Hello, ${name == "Johnny" ? "my love" : name}!`;
