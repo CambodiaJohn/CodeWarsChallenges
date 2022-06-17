@@ -4,9 +4,14 @@
 // mango(3, 3) ==> 6    # 2 mangoes for 3 = 6; +1 mango for free
 // mango(9, 5) ==> 30   # 6 mangoes for 5 = 30; +3 mangoes for free
 
+// function mango(quantity, price){
+//     var divider = Math.floor(quantity / 3);
+//     var remainder = quantity % 3;
+//     var totalCost = ((divider * 2) * price) + (remainder * price);
+//     return totalCost;
+//     }
+
+
 function mango(quantity, price){
-    var divider = Math.floor(quantity / 3);
-    var remainder = quantity % 3;
-    var totalCost = ((divider * 2) * price) + (remainder * price);
-    return totalCost;
-    }
+    return price * (quantity - Math.floor(quantity / 3));
+  }
