@@ -12,13 +12,17 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
-function countSheeps(arrayOfSheep) {
-    let count = 0;
+// function countSheeps(arrayOfSheep) {
+//     let count = 0;
     
-    arrayOfSheep.forEach( function (sheep) {
-      if (sheep)
-        count++;
-    });
+//     arrayOfSheep.forEach( function (sheep) {
+//       if (sheep)
+//         count++;
+//     });
     
-    return count;
+//     return count;
+//   }
+
+function countSheeps(arr) {
+    return arr.filter(Boolean).length;
   }
