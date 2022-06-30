@@ -8,10 +8,14 @@
 
 // Note: for this kata y isn't considered a vowel.
 
-function disemvowel(str) {
-    var vowels = ['a', 'e', 'i', 'o', 'u'];
+// function disemvowel(str) {
+//     var vowels = ['a', 'e', 'i', 'o', 'u'];
     
-    return str.split('').filter(function(el) {
-      return vowels.indexOf(el.toLowerCase()) == -1;
-    }).join('');
+//     return str.split('').filter(function(el) {
+//       return vowels.indexOf(el.toLowerCase()) == -1;
+//     }).join('');
+//   }
+
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '');
   }
