@@ -16,6 +16,8 @@
 // Output: "even"
 // Have fun!
 
-function oddOrEven(arr) {
-    return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
-  }
+// function oddOrEven(arr) {
+//     return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+//   }
+
+const oddOrEven = a => a.reduce((s,n)=> s + n,0)%2 == 0 ? "even" : "odd";
