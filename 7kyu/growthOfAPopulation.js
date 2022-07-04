@@ -31,3 +31,8 @@ function nbYear(p0, percent, aug, p, i = 1) {
         return i;
     return nbYear(pp, percent, aug, p, i+1);
 }
+
+//p
+//r
+//e
+//p
