@@ -10,11 +10,13 @@
 
 // The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 
-let number = function(busStops){
-    let totalPeople = 0;
-    for (let i=0; i<busStops.length; i++) {
-      totalPeople += busStops[i][0];
-      totalPeople -= busStops[i][1];
-    }
-    return totalPeople;
-  }
+// let number = function(busStops){
+//     let totalPeople = 0;
+//     for (let i=0; i<busStops.length; i++) {
+//       totalPeople += busStops[i][0];
+//       totalPeople -= busStops[i][1];
+//     }
+//     return totalPeople;
+//   }
+
+const number = busStops => busStops.reduce((p,n) => p+n[0]-n[1],0)
